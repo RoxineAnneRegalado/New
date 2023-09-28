@@ -1,0 +1,328 @@
+:root{
+	--violet:#FFDCB6;
+}
+
+*{
+	font-family: 'Nunito', sans-serif;
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none; border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+/*new*/
+*selection::{
+	background:var(--violet) ;
+	color: #333;
+}
+/*add*/
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+	width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+	background: #222;
+}
+html::-webkit-scrollbar-thumb{
+	background:var(--violet);
+}
+body{
+	background: #78D6C6;
+	overflow-x: hidden;
+	padding-left: 35rem;
+}
+section{
+	min-height: 100vh;
+	padding: 1rem;
+}
+
+.btn{
+	padding: .7rem 3rem;
+	background:violet;
+	color: white;
+	cursor: pointer;
+	margin-top: 1rem;
+	font-size: 2rem;
+	border-radius: 5rem;
+}
+.btn i{
+	padding: 0 .5rem;
+	font-size: 1.8rem;
+}
+
+.btn:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 5px white, 0 0 10px white 0 0 15px white;
+	font-weight: bold;
+}
+
+.heading{
+	text-align: center;
+	margin: 0 6rem;
+	font-size: 4rem;
+	padding: 1rem;
+	border-bottom: .1rem solid violet;
+	color: white;
+}
+
+.heading span{
+	color: violet;
+}
+
+header{
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 1000;
+	height: 100%;
+	width: 35rem;
+	background: #E5BEEC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	text-align: center;
+}
+
+header .user img{
+	height: 17rem;
+	width: 17rem;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 1rem;
+	border: .7rem solid var(--violet);
+}
+
+header .user .name{
+	font-size: 2.5rem;
+	color: #9384D1;
+	font-style: italic;
+}
+header .user .post{
+	font-size: 1.5rem;
+	color: #9384D1;
+
+
+}
+
+header .navbar{
+	width: 100%;
+}
+header .navbar ul{
+	list-style: none;
+	padding: 1rem 3rem;
+}
+
+
+header .navbar ul li a{
+	display: block;
+	padding: 1rem;
+	margin: 1.5rem 0;
+	background: #BA90C6;
+	color: white;
+	font-size: 2rem;
+	border-radius: 5rem;
+}
+
+header .navbar ul li a:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0 0 10px lightpink;
+
+}
+/*HOME*/
+.home{
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	padding:0 15rem;
+}
+.home h3{
+	font-size: 2.5rem;
+	color: black;
+}
+.home h1{
+	font-size: 5rem;
+	color: black;
+}
+
+.home h1 span{
+	color: #FF3FA4;
+	font-family: Cooper Black;
+	font-style: italic;
+}
+
+
+#home::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url('new.gif') no-repeat center center/cover;
+	height: 600px;
+	width: 75%;
+	z-index: -1;
+	opacity: .8;
+}
+
+
+/*ABOUT*/
+.about .row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem 0;
+}
+
+.about .row .info{
+	flex: 1 1 48rem;
+	padding: 2rem 1rem; 
+	padding-left: 6rem;
+}
+
+.about .row .info h3{
+	font-size: 2rem;
+	color: darkviolet;
+	padding: 1rem 0;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.about .row .info h3 span{
+	color: white;
+	padding: 0 .5rem;
+	font-family:Arial Black ;
+}
+.about .intro{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 1rem 0;
+}
+.about .row .intro{
+	flex: 1 1 48rem;
+	padding: 2rem 1rem; 
+	padding-right: 6rem;
+}
+.about .row .intro p{
+	font-size: 2rem;
+	color: #141E46;
+	padding: 1rem 0;
+	font-weight: normal;
+	font-family: Bahnschrift;
+}
+.about .row .intro p span{
+	font-size: 2rem;
+	font-family: arial;
+	font-style: italic;
+	color: blue;
+	padding: 1rem 0;
+	font-weight: normal;
+}
+.education .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1rem 0;
+	padding-left: 3rem;
+}
+.education .box-container .box{
+	width: 27rem;
+	margin: 5rem 1rem;
+	padding-left: 4rem;
+	border-left: .2rem solid white;
+	position: relative;
+}
+.education .box-container .box span{
+	font-size: 1.5rem;
+	background: violet;
+	color: white;
+	border-radius: 5rem;
+	padding: .5rem 3.5rem;
+}
+.education .box-container .box h3{
+	font-size: 2rem;
+	color: white;
+	padding-top: 1.5rem;
+}
+.education .box-container .box p{
+	font-size: 1.4rem;
+	color: black;
+	padding-top: 1.5rem;
+}
+.education .box-container .box i{
+	position: absolute;
+	top: -1.5rem; left: -2.5rem;
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	line-height: 5rem;
+	text-align: center;
+	font-size: 2rem;
+	color: white;
+	background: violet;
+}
+
+.portfolio .box-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 2rem 0;
+}
+
+.portfolio .box-container .box{
+	height: 20rem;
+	width: 26rem;
+	border-radius: 1rem;
+	margin: 2rem;
+	overflow: hidden;
+	cursor: pointer;
+} 
+.portfolio .box-container .box img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+} 
+.portfolio .box-container .box:hover img{
+	transform: scale(1.2);
+}
+.contact .row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.contact .row .content{
+	flex: 1 1 30rem;
+	padding: 4rem;
+	padding-bottom: 0;
+}
+
+.contact .row .content .title{
+	text-transform: uppercase;
+	color: deeppink;
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	color: darkviolet;
+	padding: 1rem 0;
+	font-weight: normal;
+}
+.contact .row .content .info h3 i{
+	padding-right: 1rem;
+	color: hotpink;
+}
